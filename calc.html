@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            background-color: lightgrey;
+        }
+        /* grid container */
+        .container{
+            justify-content: center;
+            border:10px solid white;
+            margin: 40px;
+        }
+        
+        .flex-container {
+            display: flex;
+            gap: 10px;
+            background: white;
+            padding: 10px;
+            flex-direction: column;
+        }
+        .cal{
+            background-color: lightgrey;
+            color: black;
+            padding: 25px;
+            text-align: center;
+            flex:1;
+            font-size: 30px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px grey;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            background: white;
+            
+            padding: 10px;
+        }
+
+        /* grid items */
+        .grid-items {
+            background-color: lightgrey;
+            color: black;
+            padding: 20px;
+            text-align: center;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+        }
+        .grid-items1 {
+            background-color:plum ;
+            color: black;
+            padding: 20px;
+            text-align: center;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+        }
+        .grid-items2 {
+            background-color:white ;
+            color: black;
+            padding: 20px;
+            text-align: center;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="flex-container">
+            <div class="cal"></div>
+        </div>
+        <div class="grid-container">
+            <div class="grid-items">c</div>
+            <div class="grid-items">7</div>
+            <div class="grid-items">8</div>
+            <div class="grid-items">9</div>
+            <div class="grid-items1">/</div>
+            <div class="grid-items">4</div>
+            <div class="grid-items">5</div>
+            <div class="grid-items">6</div>
+            <div class="grid-items1">+</div>
+            <div class="grid-items2"></div>
+            <div class="grid-items">1</div>
+            <div class="grid-items">2</div>
+            <div class="grid-items">3</div>
+            <div class="grid-items1">-</div>
+            <div class="grid-items2"></div>
+            <div class="grid-items">0</div>
+            <div class="grid-items">.</div>
+            <div class="grid-items1">=</div>
+            <div class="grid-items1">*</div>
+            <div class="grid-items2"></div>
+        </div>
+    </div>
+</body>
+</html>
